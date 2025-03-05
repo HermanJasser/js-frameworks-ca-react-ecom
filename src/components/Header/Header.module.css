@@ -19,17 +19,25 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: black;
   text-decoration: none;
 }
 
-.kasse {
-  color: #333;
-  font-size: 20px;
-  transition: color 0.3s ease;
+.logo:hover {
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.kasse:hover,
-.logo:hover {
-  color: #0070f3;
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.kontakt {
+  color: black;
+  font-size: 20px;
+}
+
+.kontakt:hover {
+  color: rgba(0, 0, 0, 0.6);
 }

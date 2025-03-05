@@ -9,11 +9,10 @@
   justify-content: space-between;
 }
 .kontakt {
-  color: #333;
+  color: black;
   font-size: 20px;
-  transition: color 0.3s ease;
 }
 
 .kontakt:hover {
-  color: #0070f3;
+  color: rgba(0, 0, 0, 0.6);
 }

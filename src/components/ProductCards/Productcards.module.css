@@ -13,7 +13,7 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  height: 100%; /* Sørger for at kortet tar full høyde slik at margin-top: auto fungerer */
+  height: 100%;
 }
 
 .card:hover {

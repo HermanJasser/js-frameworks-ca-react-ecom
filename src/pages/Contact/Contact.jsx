@@ -52,9 +52,10 @@ const Contact = () => {
     <div className={styles.container}>
       <h2 className={styles.title}>Kontakt</h2>
       <form onSubmit={handleSubmit} className={styles.form}>
-   
         <div className={styles.formGroup}>
-          <label htmlFor="fullName" className={styles.label}>Fullt navn:</label>
+          <label htmlFor="fullName" className={styles.label}>
+            Fullt navn:
+          </label>
           <input
             type="text"
             id="fullName"
@@ -69,7 +70,9 @@ const Contact = () => {
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="subject" className={styles.label}>Emne:</label>
+          <label htmlFor="subject" className={styles.label}>
+            Emne:
+          </label>
           <input
             type="text"
             id="subject"
@@ -82,9 +85,11 @@ const Contact = () => {
           />
           {errors.subject && <p className={styles.error}>{errors.subject}</p>}
         </div>
-     
+
         <div className={styles.formGroup}>
-          <label htmlFor="email" className={styles.label}>Epost:</label>
+          <label htmlFor="email" className={styles.label}>
+            Epost:
+          </label>
           <input
             type="email"
             id="email"
@@ -98,7 +103,9 @@ const Contact = () => {
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="body" className={styles.label}>Melding:</label>
+          <label htmlFor="body" className={styles.label}>
+            Melding:
+          </label>
           <textarea
             id="body"
             name="body"
@@ -110,11 +117,12 @@ const Contact = () => {
           ></textarea>
           {errors.body && <p className={styles.error}>{errors.body}</p>}
         </div>
-        <button type="submit" className={styles.btn}>Send</button>
+        <button type="submit" className={styles.btn}>
+          Send
+        </button>
       </form>
     </div>
   );
 };
 
 export default Contact;
-
