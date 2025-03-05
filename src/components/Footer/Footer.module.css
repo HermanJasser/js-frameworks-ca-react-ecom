@@ -1,20 +1,19 @@
 .Footer {
-    background-color: #6aa3dc; /* Lys bakgrunnsfarge */
-    padding: 30px 50px;
-    border-bottom: 1px solid #ddd;
-  }
+  background-color: #6aa3dc; /* Lys bakgrunnsfarge */
+  padding: 30px 50px;
+  border-bottom: 1px solid #ddd;
+}
 
-  .cont{
-    display: flex;
-    justify-content: space-between ;
-  }
-  .kontakt {
-    
-    color: #333;
-    font-size: 20px;
-    transition: color 0.3s ease;
-  }
-  
-  .kontakt:hover {
-    color: #0070f3;
-  }
+.cont {
+  display: flex;
+  justify-content: space-between;
+}
+.kontakt {
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.kontakt:hover {
+  color: #0070f3;
+}

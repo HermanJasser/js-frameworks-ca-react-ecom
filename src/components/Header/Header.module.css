@@ -2,36 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .header {
-    background-color: #6aa3dc; /* Lys bakgrunnsfarge */
-    padding: 30px 50px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .cont {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .logo {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-  }
-  
+  background-color: #6aa3dc; /* Lys bakgrunnsfarge */
+  padding: 30px 50px;
+  border-bottom: 1px solid #ddd;
+}
 
-  
-  .kasse {
-    color: #333;
-    font-size: 20px;
-    transition: color 0.3s ease;
-  }
-  
-  .kasse:hover, .logo:hover {
-    color: #0070f3;
-  }
-  
+.cont {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.kasse {
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.kasse:hover,
+.logo:hover {
+  color: #0070f3;
+}
