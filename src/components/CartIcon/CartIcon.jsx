@@ -1,4 +1,3 @@
-// src/components/CartIcon/CartIcon.jsx
 import React, { useContext } from 'react';
 import styles from './CartIcon.module.css';
 import { ReactComponent as CartSvg } from '../../assets/cart.svg';

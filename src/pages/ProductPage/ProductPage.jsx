@@ -1,4 +1,3 @@
-// src/pages/ProductPage/ProductPage.jsx
 import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';

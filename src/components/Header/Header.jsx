@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import React from 'react';
 import styles from './Header.module.css';
 import CartIcon from '../CartIcon/CartIcon';
@@ -10,12 +9,12 @@ const Header = () => {
         <a href="/" className={styles.logo}>
           Ecom
         </a>
-        <div className={styles.nav}>
+        <nav className={styles.nav}>
           <a href="/kontakt" className={styles.kontakt}>
             Kontakt oss
           </a>
           {location.pathname !== '/kasse' && <CartIcon />}
-        </div>
+        </nav>
       </div>
     </header>
   );

@@ -1,18 +1,15 @@
-/* Container for hele bekreftelsessiden */
 .container {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
 }
 
-/* Liste uten punktmerking */
 .productList {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Hvert produkt vises som et kort */
 .productItem {
   display: flex;
   align-items: flex-start;
@@ -22,7 +19,6 @@
   padding: 10px;
 }
 
-/* Produktbildet */
 .productImage {
   width: 120px;
   aspect-ratio: 1/1;
@@ -31,7 +27,6 @@
   border-radius: 4px;
 }
 
-/* Innholdet for hvert produkt */
 .productInfo {
   flex: 1;
 }
@@ -54,13 +49,11 @@
   color: #333;
 }
 
-/* Container for knappen */
 .buttonContainer {
   margin-top: 20px;
   text-align: center;
 }
 
-/* Styling for hjem-knappen */
 .homeButton {
   padding: 10px 20px;
   background-color: #007bff;

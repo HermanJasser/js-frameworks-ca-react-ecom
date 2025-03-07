@@ -9,16 +9,13 @@ const Checkout = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Hent handlekurven fra localStorage (lagret som en array med produkt-IDer)
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Lag en frekvens-teller for antall forekomster per produkt-ID
     const frequencyMap = cart.reduce((acc, id) => {
       acc[id] = (acc[id] || 0) + 1;
       return acc;
     }, {});
 
-    // Hent alle produktene fra API-et
     fetch('https://v2.api.noroff.dev/online-shop')
       .then((response) => {
         if (!response.ok) {
@@ -28,7 +25,7 @@ const Checkout = () => {
       })
       .then((data) => {
         const allProducts = data.data;
-        // Filtrer ut de produktene som finnes i handlekurven, og legg til antall (count)
+
         const purchased = allProducts
           .filter((product) => frequencyMap[product.id])
           .map((product) => ({
@@ -37,7 +34,7 @@ const Checkout = () => {
           }));
         setPurchasedProducts(purchased);
         setLoading(false);
-        // Tøm handlekurven i localStorage
+
         localStorage.removeItem('cart');
       })
       .catch((err) => {
@@ -46,7 +43,6 @@ const Checkout = () => {
       });
   }, []);
 
-  // Beregn totalpris basert på discountedPrice og antall
   const totalPrice = purchasedProducts.reduce(
     (acc, product) => acc + product.discountedPrice * product.count,
     0

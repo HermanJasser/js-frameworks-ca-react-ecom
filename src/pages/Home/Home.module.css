@@ -4,3 +4,21 @@
   gap: 16px;
   padding: 16px;
 }
+
+.searchContainer {
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
