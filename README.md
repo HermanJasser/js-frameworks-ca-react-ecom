@@ -1,3 +1,8 @@
+# Ecom
+A ecommerce store build on React and using  [Noroff api](https://docs.noroff.dev/docs/v2/basic/online-shop).
+
+Netflify: https://ecomca.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
